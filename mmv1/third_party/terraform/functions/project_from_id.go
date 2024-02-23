@@ -26,7 +26,7 @@ func (f ProjectFromIdFunction) Definition(ctx context.Context, req function.Defi
 		Parameters: []function.Parameter{
 			function.StringParameter{
 				Name:        "id",
-				Description: "A string of a resource's id, a resource's self link, or an OP style resource name. For example, \"projects/my-project/zones/us-central1-c/instances/my-instance\", \"https://www.googleapis.com/compute/v1/projects/my-project/zones/us-central1-c/instances/my-instance\" and \"//gkehub.googleapis.com/projects/my-project/locations/us-central1/memberships/my-membership\" are valid values",
+				Description: "A string of a resource's id, a resource's self link, or an OP style resource name. For example, \"projects/my-project/zones/us-central1-c/instances/my-instance\", \"https://www.googleapis.com/compute/v1/projects/my-project/zones/us-central1-c/instances/my-instance\" and \"//gkehub.googleapis.com/projects/my-project/locations/us-central1/memberships/my-membership\" are valid values containing projects",
 			},
 		},
 		Return: function.StringReturn{},
